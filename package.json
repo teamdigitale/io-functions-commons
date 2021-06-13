@@ -65,7 +65,7 @@
     "helmet-csp": "^2.5.1",
     "io-ts": "1.8.5",
     "node-fetch": "^2.6.1",
-    "nodemailer": "^6.5.0",
+    "nodemailer": "^6.6.1",
     "nodemailer-sendgrid": "^1.0.3",
     "referrer-policy": "^1.1.0",
     "rehype-stringify": "^3.0.0",

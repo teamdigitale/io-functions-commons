@@ -18,7 +18,7 @@
     "test:all": "yarn test && yarn test:integration",
     "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx",
     "generate:all": "npm-run-all generate:*",
-    "generate:definitions": "gen-api-models --api-spec ./openapi/index.yaml --out-dir ./generated/definitions",
+    "generate:definitions": "rimraf ./generated && gen-api-models --api-spec ./openapi/index.yaml --out-dir ./generated/definitions",
     "generate:templates": "gulp generate:templates",
     "preversion": "auto-changelog  --config .auto-changelog.json --unreleased --commit-limit false --stdout --template preview.hbs",
     "version": "auto-changelog -p --config .auto-changelog.json --unreleased && git add CHANGELOG.md"

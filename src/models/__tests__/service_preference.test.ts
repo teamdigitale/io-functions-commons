@@ -69,8 +69,7 @@ describe("find", () => {
     } as unknown) as Container;
 
     const model = new ServicesPreferencesModel(
-      containerMock,
-      SERVICE_PREFERENCES_COLLECTION_NAME
+      containerMock
     );
 
     const result = await model
@@ -103,8 +102,7 @@ describe("find", () => {
     } as unknown) as Container;
 
     const model = new ServicesPreferencesModel(
-      containerMock,
-      SERVICE_PREFERENCES_COLLECTION_NAME
+      containerMock
     );
 
     const result = await model
@@ -136,8 +134,7 @@ describe("find", () => {
     } as unknown) as Container;
 
     const model = new ServicesPreferencesModel(
-      containerMock,
-      SERVICE_PREFERENCES_COLLECTION_NAME
+      containerMock
     );
 
     const result = await model
@@ -170,8 +167,7 @@ describe("create ServicePreference", () => {
       }
     } as unknown) as Container;
     const model = new ServicesPreferencesModel(
-      containerMock,
-      SERVICE_PREFERENCES_COLLECTION_NAME
+      containerMock
     );
 
     const result = await model.create(aNewServicePreference).run();

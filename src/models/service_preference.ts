@@ -80,10 +80,7 @@ export class ServicesPreferencesModel extends CosmosdbModel<
    *
    * @param container the Cosmos container client
    */
-  constructor(
-    container: Container,
-    protected readonly containerName: NonEmptyString
-  ) {
+  constructor(container: Container) {
     super(container, NewServicePreference, RetrievedServicePreference);
   }
 
